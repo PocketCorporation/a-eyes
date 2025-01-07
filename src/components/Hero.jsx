@@ -1,8 +1,27 @@
-import React from 'react'
+import React from 'react';
+// import logo from'../assets';
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <header className="w-full flex flex-col justify-center items-center">
+      <nav className="flex justify-between items-center w-full mb-10 pt-3">
+        <button 
+          type='button' 
+          onClick={()=>window.open('https://github.pocketcorporation')}
+          className='black_btn'  
+        >
+          Github
+        </button>
+      </nav>
+      
+      <h1 className="head_text">
+        Summarize Atricles with <br className='max-md:hidden' />
+        <span className='orange_gradient'>OpenAi GPT-4</span>
+      </h1>
+      <hw className="desc">
+        Simplify your reading with A-eyes, an open-souce article summarizer thattransforms lengthy articles into clear concise summaries.
+      </hw>
+    </header>
   )
 }
 
