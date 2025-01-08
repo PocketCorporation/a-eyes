@@ -1,13 +1,16 @@
-import React from 'react';
-// import logo from'../assets';
+import React,{useState} from 'react';
+import {logo} from'../assets';
+// import Logo from './Logo'
 
 const Hero = () => {
   return (
     <header className="w-full flex flex-col justify-center items-center">
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
+      <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
+      {/*<Logo />*/}
         <button 
           type='button' 
-          onClick={()=>window.open('https://github.pocketcorporation')}
+          onClick={()=>window.open('https://github.com/PocketCorporation')}
           className='black_btn'  
         >
           Github
@@ -15,7 +18,7 @@ const Hero = () => {
       </nav>
       
       <h1 className="head_text">
-        Summarize Atricles with <br className='max-md:hidden' />
+        Summarize Articles with <br className='max-md:hidden' />
         <span className='orange_gradient'>OpenAi GPT-4</span>
       </h1>
       <hw className="desc">
