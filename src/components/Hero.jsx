@@ -21,9 +21,9 @@ const Hero = () => {
         Summarize Articles with <br className='max-md:hidden' />
         <span className='orange_gradient'>OpenAi GPT-4</span>
       </h1>
-      <hw className="desc">
-        Simplify your reading with A-eyes, an open-souce article summarizer thattransforms lengthy articles into clear concise summaries.
-      </hw>
+      <h2 className="desc">
+        Simplify your reading with A-eyes, an open-souce article summarizer that transforms lengthy articles into clear concise summaries.
+      </h2>
     </header>
   )
 }
