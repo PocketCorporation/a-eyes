@@ -16,12 +16,13 @@ const Hero = () => {
       </nav>
       
       <h1 className="head_text">
-        Summarize Atricles with <br className='max-md:hidden' />
+        Summarize Articles with <br className='max-md:hidden' />
         <span className='orange_gradient'>OpenAi GPT-4</span>
       </h1>
       <h2 className="desc">
         Simplify your reading with A-eyes, an open-souce article summarizer that transforms lengthy articles into clear concise summaries.
       </h2>
+      https://www.jsmastery.pro/ultimate-next-course
     </header>
   )
 }

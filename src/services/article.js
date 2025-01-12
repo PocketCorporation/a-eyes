@@ -7,14 +7,14 @@ export const articleApi = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl:'https://article-extractor-and-summarizer.p.rapidapi.com/',
         prepareHeaders: (headers)=>{
-            headers.set('x-rapidapi-key', rapidApiKey)
+            headers.set('x-rapidapi-key', '0017bdda88mshc82c1dec68bc157p15cadajsn50d8980ac71e')
             headers.set('x-rapidapi-host', 'article-extractor-and-summarizer.p.rapidapi.com')
             return headers
         }
     }),
     endpoints: (builder)=>({
         getSummary: builder.query({
-            query: (params)=>`test`
+            query: (params)=>`/summarize?url=${encodeURIComponent(params.articleUrl)}&length=3`
         }),
     }),
 })
